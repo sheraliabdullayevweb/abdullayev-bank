@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abadullayev Bank | Valuyta kurslari</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta id="keywords" name="keywords"
+        content="Abdullayev, abdullayev, Sherali, sherali, Abdullayev Sherali, abdullayev sherali, sayt, bank, Countries, abdullayev-bank, sherali-bank, Sherali-bank, veb-sayt, web-sayt">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="./pngwing.com (13).png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <i class="fa-solid fa-bank"> bank</i>
+        </a>
+        <div class="hamburger">
+            <ul class="header-ul">
+                <li class="kurslar">Valyuta kurslari</li>
+                <li class="kurs-almashish">Valyuta almashish</li>
+                <li class="aloqa">Biz bilan bog'laning</li>
+                <button class="hamburger-exit-btn">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </button>
+            </ul>
+        </div>
+        <button class="header-search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+    <h1 class="valyuta-title">Valyuta kurslari</h1>
+    <div class="container-kurslar">
+        <ul class="kurslar-ul">
+            <li class="kurs">
+                <span><img src="./USD.png" alt="">1 AQSh dollari , USD <i class="fa-brands fa-usd"></i></span>
+                <span> 12200.00 UZS</span>
+            </li>
+            <li class="kurs">
+                <span><img src="./EUR.png" alt="">1 Yevro , EUR <i class="fa-solid fa-euro"></i></span>
+                <span> 12800.00 UZS </span>
+            </li>
+            <li class="kurs">
+                <span><img src="./RUB.png" alt="">1 Rossiya rubli , RUB <i class="fa-solid fa-rub"></i></span>
+                <span> 100.00 UZS</span>
+            </li>
+        </ul>
+    </div>
+    <h1 class="valyuta-almash-title">Valyuta almashish</h1>
+    <div class="container-valyuta-almash">
+        <div class="valyuta-almash-btn-group">
+            <div class="one">
+                <button class="valyuta-almash-btn USD">Dollar(USD)</button>
+                <button class="valyuta-almash-btn EUR">Euro(EUR)</button>
+                <button class="valyuta-almash-btn RUB">Rubl(RUB)</button>
+                <button class="valyuta-almash-btn UZS">So`m(UZS)</button>
+            </div>
+            <div class="two">
+                <button class="valyuta-almash-btn USD2 bb">Dollar(USD)</button>
+                <button class="valyuta-almash-btn EUR2">Euro(EUR)</button>
+                <button class="valyuta-almash-btn RUB2">Rubl(RUB)</button>
+                <button class="valyuta-almash-btn UZS2">So`m(UZS)</button>
+            </div>
+        </div>
+        <div class="valyuta-almash-displays">
+            <div class="d-one">
+                <input type="number" placeholder="0 USD" class="display usddisplay">
+                <input type="number" placeholder="0 EUR" class="display eurdisplay">
+                <input type="number" placeholder="0 RUB" class="display rubdisplay">
+                <input type="number" placeholder="0 UZS" class="display uzsdisplay">
+            </div>
+            <div class="d-two">
+                <input type="number" placeholder="0 USD" disabled class="display usddisplay2">
+                <input type="number" placeholder="0 EUR" disabled class="display eurdisplay2">
+                <input type="number" placeholder="0 RUB" disabled class="display rubdisplay2">
+                <input type="number" placeholder="0 UZS" disabled class="display uzsdisplay2">
+            </div>
+        </div>
+    </div>
+
+    <h1 class="aloqa-title">
+        Biz bilan bog'laning
+    </h1>
+    <div class="container-aloqa">
+        <div class="aloqa-telegram li">
+            <span><i class="fa-solid fa-paper-plane"></i> Telegram</span>
+            <div class="telegram-href">
+                <a href=https://t.me/ANOR_AVIA_AGENCY">
+                    https://t.me/ANOR_AVIA_AGENCY
+                </a>
+                <span class="telegram-copy">COPY</span><i class="fa-solid fa-copy"></i>
+            </div>
+        </div>
+        <div class="aloqa-instagram li">
+            <span><i class="fa-brands fa-instagram"></i> Instagram</span>
+            <div class="instagram-href">
+                <a href="abdullayev_w11">
+                    abdullayev_w11
+                </a>
+                <span class="instagram-copy">COPY </span><i class="fa-solid fa-copy"></i>
+            </div>
+        </div>
+    </div>
+    <!-- overlay -->
+
+
+    <div class="overlay">
+        <div class="modul">
+            <div class="modul-search">
+                <input type="search" id="modul-search">
+                <button class="modul-btn">
+                    Search
+                </button>
+            </div>
+            <button class="exit-modul">Exit</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

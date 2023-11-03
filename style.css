@@ -1,0 +1,458 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: rgb(20, 20, 58);
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(34, 34, 79);
+    padding: 0 5%;
+}
+
+.fa-bank,
+.fa-magnifying-glass {
+    color: #fff;
+    /* color: rgb(0, 162, 255); */
+    cursor: pointer;
+}
+.header-search-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(34, 34, 79);
+    border: 0px solid red;
+}
+
+
+.header-ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-kurslar {
+    width: 85%;
+    height: auto;
+    margin: 50px auto;
+    background: rgb(34, 34, 79);
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.kurslar-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kurs {
+    width: 100%;
+    height: 70px;
+    border: 5px solid rgb(0, 162, 255);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    transition: all 0.3s;
+}
+
+.kurs:hover {
+    transform: scale(1.005);
+    background: rgb(0, 168, 255);
+}
+.li:hover {
+    transform: scale(1.005);
+    background: rgb(0, 168, 255);
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.valyuta-title ,.valyuta-almash-title ,.aloqa-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    place-items: center;
+    display: none;
+}
+
+.modul {
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.modul-search {
+    width: 70%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 183, 0);
+    border-radius: 20px;
+
+}
+
+#modul-search {
+    width: 80%;
+    height: 48px;
+    border-radius: 20px 0px 0px 20px;
+    border: 0px solid red;
+    padding-left: 3%;
+}
+
+.modul-btn {
+    width: 20%;
+    height: 50px;
+    border: 0px solid red;
+    background: rgb(255, 183, 0);
+    color: #fff;
+    border-radius: 0px 20px 20px 0px;
+}
+.exit-modul{
+    width: 70px;
+    height: 30px;
+    border: 0px solid red;
+    background: red;
+    color: #fff;
+    border-radius: 20px;
+}
+li{
+    cursor:pointer;
+}
+.kurslar{
+    border-bottom: 2px solid rgb(0, 162, 255);
+}
+
+.dhiden{
+    display: none;
+}
+
+.container-valyuta-almash{
+    width: 85%;
+    height: auto;
+    background: rgb(34, 34, 79);
+    border-radius: 15px;
+    padding: 2%;
+    margin: 50px auto;
+}
+.valyuta-almash-btn-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+.one ,.two{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.valyuta-almash-btn{
+    width: 25%;
+    height: 30px;
+    background: rgb(34, 34, 79);
+    color: #fff;
+    border: 0px solid red;
+    font-size: 14px;
+    padding: 1%;
+}
+.USD,.USD2{
+border-bottom: 2px solid #fff;
+}
+.valyuta-almash-displays{
+    width: 100%;
+    height: auto;
+    padding: 0 5% 0 5%;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.d-one,.d-two{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ch{
+    display: none;
+}
+
+.display{
+    width: 90%;
+    height:100px;
+    box-shadow: 0px 0px 1px #fff;
+    border-radius: 15px;
+    background: rgb(20, 20, 58);
+    border: 0px solid red;
+    padding-left: 2%;
+    font-size: 40px;
+    color: #fff;
+    overflow: scroll;
+}
+.container-aloqa{
+    width: 85%;
+    height: 300px auto;
+    background: rgb(34, 34, 79);
+    margin: 50px auto;
+    padding: 2%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.aloqa-telegram,.aloqa-instagram{
+    border: 5px solid rgb(0, 162, 255);
+    border-radius: 15px;
+    padding: 2% 2% 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.telegram-href,.instagram-href{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hamburger-btn{
+    width: 20px;
+    background:rgb(34, 34, 79);
+    border: 0px solid red;
+    display: none;
+}
+.fa-bars{
+    color: #fff;
+}
+.hamburger{
+    width: 40%;
+    transition: all 1s;
+}
+.hamburger-exit-btn{
+    display: none;
+}
+/* .hamburger{
+    width: 30%;
+    height: 100vh;
+    background: rgb(34, 34, 79);
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+@media only screen and (max-width:1250px){
+    .hamburger{
+        width: 40%;
+    }
+    li{
+        font-size: 15px;
+    }
+    .valyuta-title{
+        font-size: 30px;
+    }
+    .valyuta-almash-btn{
+        font-size: 12px;
+    }
+    .valyuta-almash-btn-group{
+        padding: 0 15% 0 7%;
+    }
+}
+@media only screen and (max-width:1170px){
+    .hamburger{
+        width: 50%;
+    }
+    li{
+        font-size: 15px;
+    }
+    .valyuta-title{
+        font-size: 30px;
+    }
+    .valyuta-almash-btn{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:1080px){
+    .hamburger{
+        width: 45%;
+    }
+    li{
+        font-size: 13px;
+    }
+    .valyuta-title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:450px){
+    span,a,i{
+        font-size: 8px !important;
+    }
+}
+@media only screen and (max-width:497px){
+    .kurslar,.kurs-almashish,.aloqa{
+        font-size: 10px !important;
+    }
+}
+@media only screen and (max-width:380px){
+    li{
+        font-size: 7px;
+        border: 1px solid rgb(0, 162, 255);
+    }
+    .valyuta-title{
+        font-size: 15px;
+    }
+    .valyuta-almash-btn{
+        font-size:7px !important;
+    }
+    .valyuta-almash-title{
+        font-size: 25px !important;
+    }
+}
+
+@media only screen and (max-width:580px){
+    span,a,i{
+        font-size: 11px !important;
+    }
+}
+@media only screen and (max-width:620px){
+    .valyuta-almash-btn-group{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0;
+    }
+    .valyuta-almash-btn{
+        font-size: 10px !important;
+    }
+    .valyuta-almash-title{
+        font-size: 25px !important;
+    }
+    span,a,i{
+        font-size: 15px;
+    }
+    .aloqa-title{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:980px){
+    .header-ul{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 50px;
+        padding-left: 15%;
+        padding-top: 15%;
+    }
+    .valyuta-almash-btn-group{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15%;
+    }
+    .valyuta-almash-btn{
+        font-size: 5px;
+    }
+    .container-valyuta-almash{
+        gap: 20px;
+    }
+    .valyuta-almash-btn{
+        font-size: 15px;
+    }
+    .one{
+        width: 100%;
+    }
+    .two{
+        width: 100%;
+    }
+    .valyuta-almash-displays{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hamburger-exit-btn{
+        display: block;
+    }
+    .hamburger-btn{
+        width: 20px;
+        background:rgb(34, 34, 79);
+        border: 0px solid red;
+        display: block;
+    }
+    li{
+        text-align: justify;
+    }
+    .valyuta-title{
+        font-size: 25px;
+    }
+    .hamburger{
+        width: 30%;
+        height: 100vh;
+        background: rgb(34, 34, 79);
+        position: absolute;
+        top: 0;
+        right: -50%;
+        /* display: none; */
+    }
+}
